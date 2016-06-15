@@ -1,6 +1,7 @@
+
 node {
-   stage 'Stage 1'
-   echo 'Hello World 1'
-   stage 'Stage 2'
-   echo 'Hello World 2'
+   stage 'Commit stage'
+   echo 'commit process'
+   stage 'deployment stage'
+   echo 'change in output folder and execute docker-compose up -d '
 }

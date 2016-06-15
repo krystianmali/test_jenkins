@@ -1,7 +1,20 @@
 
 node {
-   stage 'Commit stage'
+   stage 'Commit Stage'
    echo 'commit process'
+
+   stage 'Smoketest Stage'
+   echo 'execute smoke tests'
+
+   stage 'Acceptencetest Stage'
+   echo 'execute acceptencetests'
+
+   stage 'NFR Stage'
+   echo 'execute non functional requirements tests'
+
+   stage 'Manuel Acceptancetest Stage'
+   echo 'execute non functional requirements tests'
+
    stage 'Deployment stage'
    echo 'change in output folder and execute docker-compose up -d '
 }

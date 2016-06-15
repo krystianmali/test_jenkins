@@ -15,7 +15,7 @@ node {
    stage 'Manuel Acceptancetest Stage'
    timeout(time:2, unit:'DAYS') {
     input message:'Approve deployment?'
-    echo 'execute non functional requirements tests'
+    echo 'execute manuel ctional requirements tests'
    }
 
 

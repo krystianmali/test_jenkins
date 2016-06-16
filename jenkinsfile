@@ -1,5 +1,7 @@
 
 node {
+   git changelog: false, credentialsId: '2d1a7f7b-9bf1-4440-b604-af7db15d5700', poll: false, url: 'git@github.com:krystianmali/test_jenkins.git'
+
    stage 'Commit Stage'
    echo 'commit process'
 

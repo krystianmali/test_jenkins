@@ -21,7 +21,7 @@ node {
 
    }
 
-
+   sh  'dir'
    stage 'Deployment stage'
    sh  'docker-compose up -d'
    echo 'change in output folder and execute docker-compose up -d '

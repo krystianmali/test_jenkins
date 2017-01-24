@@ -1,26 +1,37 @@
-categorizedJobsView('pipline') {
+listView('pipline') {
+    description('All  pipline jobs')
+    filterBuildQueue()
+    filterExecutors()
     jobs {
-        regex(/pipline.*/)
-    }
-    categorizationCriteria {
-        regexGroupingRule(/^pipline([^_]+).*$/)
+        name('pipline')
+        regex(/pipline.+/)
     }
     columns {
         status()
-        categorizedJob()
+        weather()
+        name()
+        lastSuccess()
+        lastFailure()
+        lastDuration()
         buildButton()
     }
 }
-categorizedJobsView('job') {
+
+listView('job') {
+    description('All standard jobs')
+    filterBuildQueue()
+    filterExecutors()
     jobs {
-        regex(/job.*/)
-    }
-    categorizationCriteria {
-        regexGroupingRule(/^job([^_]+).*$/)
+        name('job')
+        regex(/job.+/)
     }
     columns {
         status()
-        categorizedJob()
+        weather()
+        name()
+        lastSuccess()
+        lastFailure()
+        lastDuration()
         buildButton()
     }
 }

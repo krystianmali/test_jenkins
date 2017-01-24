@@ -1,4 +1,3 @@
-#!!!<-- SET EXTERNAL_IP  export EXTERNAL_IP=${COREOS_PRIVATE_IPV4} on Core OS or the puplic IP from docker host -->!!!
 version: '2.0'
 services:
   jenkins:

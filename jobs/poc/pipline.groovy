@@ -1,10 +1,7 @@
 pipelineJob('pipline_one') {
     definition {
         cps {
-            script("node{ \
-                    stage 'Commit Stage' \
-                    echo 'commit process' \
-            }")
+            script("node{ ps 'dir' }" )
             sandbox()
         }
     }

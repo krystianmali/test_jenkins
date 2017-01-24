@@ -1,4 +1,4 @@
-job("Demo build job") {
+job("job_one") {
  scm {
   git {
    remote {

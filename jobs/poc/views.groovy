@@ -11,3 +11,16 @@ categorizedJobsView('pipline') {
         buildButton()
     }
 }
+categorizedJobsView('job') {
+    jobs {
+        regex(/job.*/)
+    }
+    categorizationCriteria {
+        regexGroupingRule(/^job([^_]+).*$/)
+    }
+    columns {
+        status()
+        categorizedJob()
+        buildButton()
+    }
+}

@@ -1,7 +1,7 @@
 pipelineJob('pipline_one') {
     definition {
         cps {
-            script("node{ ps 'dir' }" )
+            script("node{ sh 'dir' }" )
             sandbox()
         }
     }

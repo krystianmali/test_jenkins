@@ -1,14 +1,8 @@
 pipelineJob('pipline_one') {
     definition {
-        cpsScm {
-            scm {
-        		git {
-                    remote {
-                        github('git@github.com:krystianmali/test_jenkins.git','ssh')
-                        credentials('Github')
-                    }
-        		}
-    		}
+        cps {
+            script(readFileFromWorkspace('jenkinsfile.groovy'))
+            sandbox()
         }
     }
     configure { project ->

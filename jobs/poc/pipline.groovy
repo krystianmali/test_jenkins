@@ -3,6 +3,7 @@ pipelineJob('pipline_one') {
         cpsScm {
             scm {
                 git('https://github.com/jenkinsci/job-dsl-plugin.git')
+                credentials('9fb70847-e508-466f-99c6-df3dadcfce93') 
             }
         }
     }

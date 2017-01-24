@@ -1,5 +1,5 @@
 pipelineJob('pipline_one') {
-      configure { flow-definition ->
+      configure { project ->
       flow-definition / publishers / 'jenkins.plugins.logstash.LogstashNotifier' {
           maxLines(1000)
           failBuild(false)

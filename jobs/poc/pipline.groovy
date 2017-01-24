@@ -4,11 +4,11 @@ pipelineJob('pipline_one') {
           maxLines(1000)
           failBuild(false)
       }
-  }
+    }
 
     definition {
         cps {
-            script("node{ sh 'ps' }" )
+            script("node{ sh 'dir' }" )
             sandbox()
         }
     }

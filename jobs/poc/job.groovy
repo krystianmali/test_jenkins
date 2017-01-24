@@ -2,7 +2,7 @@ job("job_one") {
  scm {
   git {
    remote {
-   url 'https://github.com/lexandro/restapi-demo.git' 
+   url 'https://github.com/lexandro/resmo.git' 
   }
   branch 'master'
   }

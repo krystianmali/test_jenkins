@@ -11,3 +11,4 @@ job("Demo build job") {
   maven('compile')
  }
 }
+
